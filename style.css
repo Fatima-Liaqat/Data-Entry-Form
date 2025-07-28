@@ -1,0 +1,249 @@
+@font-face 
+{ 
+    font-family: 'Helvetica'; 
+    src: url('/cdn/shop/files/Helvetica.ttf?v=1724257571'); 
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+main 
+{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    background-color: rgb(146, 139, 141);
+    margin: 5ch 0vw;
+    padding: 5vh 5vw;
+    border-radius: 2vw;
+}
+
+/* Heading Styling*/
+main h1
+{
+    font-family: 'Helvetica';
+    display: flex;
+    justify-content: center;
+    color: rgba(0,0,0, 0.75)
+}
+
+/* Form Styling*/
+.form-section
+{
+    margin-bottom: 5vh;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 15vw;
+    justify-content: center;
+    row-gap: 5vh;   
+}
+
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.main-container span
+{
+    font-size: 1.5vw;
+      font-family: 'Helvetica';
+     font-weight: 100;
+}
+
+input
+{
+    width: auto;
+    height: 6vh;
+    border: 1px solid transparent;
+    border-radius: 0.5vw;
+}
+
+input::placeholder
+{
+    padding-left: 1vw;
+}
+
+/* Buttons Styling*/
+#submit-btn
+{
+    
+    align-items: center;
+    margin-left: 34vw;
+    
+}
+
+#resetBtn
+{
+    align-items: center;
+    margin-left: 65vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    background-color:  rgb(109, 93, 49);
+    color: rgb(255, 255, 255);
+    border-radius: 1vw;
+    border: 1px solid  rgb(109, 93, 49);
+}
+
+#download-btn
+{
+    align-items: center;
+    margin-left: 34vw;
+    margin-top: 2vh;
+    background-color: rgb(109, 93, 49);
+    color: rgb(255, 255, 255);
+    border-radius: 1vw;
+    border: 1px solid  rgb(109, 93, 49);
+}
+
+button
+{
+    font-family: 'Helvetica';
+    width: 13vw;
+    height: 6vh;
+    background-color: rgb(59, 3, 3);
+    color: white;
+    border-radius: 1vw;
+    border: 1px solid  rgb(59, 3, 3);
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+/* Table Styling*/
+table
+{
+    width: 80vw;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 2vh;
+    background-color: white;
+}
+
+th, td
+{
+    border: 1px solid black;
+    width: auto;
+    font-family: 'Helvetica';
+    padding: 0.5vw;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) 
+{
+    body 
+    {
+        overflow-x: hidden;
+    }
+
+    main 
+    {
+        width: 85vw;
+        margin: 3ch auto;
+        padding: 3vh 3vw;
+        border-radius: 1vw;
+    }
+
+    main h1 
+    {
+        font-size: 7vw !important;
+    }
+
+    .form-section 
+    {
+        margin-bottom: 3vh;
+    }
+
+    form 
+    {
+        column-gap: 5vw;
+        row-gap: 3vh;
+    }
+
+    .main-container span 
+    {
+        font-size: 6vw !important;
+    }
+
+    input 
+    {
+        height: 5vh;
+        border-radius: 1vw;
+    }
+
+    input::placeholder 
+    {
+        font-size: 4vw !important;
+        padding-left: 2vw;
+    }
+    
+    #submit-btn,
+    #download-btn 
+    {
+        width: 40vw;
+        height: 7vh;
+        margin-left: 24vw;
+        align-self: center;
+        margin-top: 3vh;
+        border-radius: 2vw;
+    }
+
+    #resetBtn 
+    {
+        width: 40vw;
+        height: 7vh;
+        margin-left: 45vw;
+        align-self: center;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+        border-radius: 2vw;
+    }
+
+    button 
+    {
+        width: 37vw !important;
+        height: 5vh !important;
+        border-radius: 1vw !important;
+        font-size: 5vw !important;
+    }
+
+    table 
+    {
+        width: 100%; 
+        margin-top: 2vh;
+        display: block; 
+        overflow-x: auto; 
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    th,
+    td 
+    {
+        border: 1px solid black;
+        width: auto;
+        padding: 1vw;
+        white-space: normal; 
+        min-width: 80px; 
+        font-size: 6vw !important;
+    }
+
+    th 
+    {
+        padding: 1.5vw;
+    }
+}

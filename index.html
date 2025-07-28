@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry Form</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <main>
+        <!-- Heading -->
+    <h1>Data Entry Form</h1>
+        <!-- Form Section-->
+        <form id = "dataForm">
+            <div class = "main-container">
+                <span>First Name</span>
+                <input id = "first_name" type = "text" placeholder = "Enter first name" required>
+            </div>
+            <div class = "main-container">
+                <span>Last Name</span>
+                <input id = "last_name" type = "text" placeholder = "Enter last name" required>
+            </div>
+        
+            <div class = "main-container">
+                <span>Email Name</span>
+                <input id = "email" type = "email" placeholder = "Enter email" required>
+            </div>
+            <div class = "main-container">
+                <span>Contact number</span>
+                <input id = "phone" type = "tel" placeholder = "Enter contact number" required>
+            </div>
+            
+            </div>
+            
+            <div><button id = "submit-btn">Submit</button> </div>
+        </form>
+        <!-- Table Section-->
+    <section class = "data-display-section">
+       <div><button id = "resetBtn">Reset</button> </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Contact Number</th>
+                    <th>Actions</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button id = "download-btn">Download</button>
+    </section>
+    </main>
+    <script src = "script.js"></script>
+</body>
+</html>
